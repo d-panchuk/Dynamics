@@ -9,4 +9,4 @@ Application to try out physics-based animations provided by UIKit Dynamics.
 
 #### Sticky corners  
 <img src="Demo/corners.gif" width="200" height="400">
-<img src="Demo/corners-2.gif" width="200" height="400">
+<img src="Demo/corners-2.gif" width="400" height="400">

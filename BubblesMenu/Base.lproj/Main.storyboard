@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BubblesMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bM2-FU-dSn" customClass="BubblesMenuView" customModule="BubblesMenu" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bM2-FU-dSn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ee0-uI-uOg"/>
+                            <constraint firstAttribute="trailing" secondItem="bM2-FU-dSn" secondAttribute="trailing" id="mPf-h4-HV6"/>
+                            <constraint firstAttribute="bottom" secondItem="bM2-FU-dSn" secondAttribute="bottom" id="v3D-E8-02p"/>
+                            <constraint firstItem="bM2-FU-dSn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xt7-FA-0il"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="menuView" destination="bM2-FU-dSn" id="5Pt-7n-l0J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="128.57142857142856"/>
+        </scene>
+        <!--Bottom Sheet View Controller-->
+        <scene sceneID="mId-ZR-Oij">
+            <objects>
+                <viewController storyboardIdentifier="BottomSheetViewController" id="Y9x-DN-N3c" customClass="BottomSheetViewController" customModule="BubblesMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="dht-FV-RLQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4re-NN-nAS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="10j-Xe-669"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AK1-E8-LFs" customClass="RoundedCornersView" customModule="BubblesMenu" customModuleProvider="target">
+                                <rect key="frame" x="172" y="10" width="70" height="7"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="7" id="AyV-tO-HXC"/>
+                                    <constraint firstAttribute="width" constant="70" id="TDk-PW-9yY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AK1-E8-LFs" firstAttribute="centerX" secondItem="fNX-rT-xDL" secondAttribute="centerX" id="Kir-RU-hnS"/>
+                            <constraint firstAttribute="trailing" secondItem="4re-NN-nAS" secondAttribute="trailing" id="SPb-c0-CFN"/>
+                            <constraint firstItem="4re-NN-nAS" firstAttribute="leading" secondItem="dht-FV-RLQ" secondAttribute="leading" id="fgo-xR-tKz"/>
+                            <constraint firstItem="4re-NN-nAS" firstAttribute="top" secondItem="dht-FV-RLQ" secondAttribute="top" id="gpD-yC-mjS"/>
+                            <constraint firstItem="AK1-E8-LFs" firstAttribute="top" secondItem="dht-FV-RLQ" secondAttribute="top" constant="10" id="xdw-jG-Myp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fNX-rT-xDL"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <connections>
+                        <outlet property="translationControlView" destination="AK1-E8-LFs" id="UiH-ot-ktX"/>
+                        <outlet property="translationHeaderView" destination="4re-NN-nAS" id="zcA-X9-aUd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Af-fW-hoZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="128"/>
+        </scene>
+    </scenes>
+</document>

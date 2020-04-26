@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BubbleView" customModule="BubblesMenu" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="WwV-hU-zaT"/>
+                <outlet property="iconImageView" destination="2LL-zS-tdm" id="S5e-3r-2Di"/>
+                <outlet property="titleLabel" destination="DD8-Hi-0Az" id="XHW-RL-bs0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="276" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2LL-zS-tdm">
+                    <rect key="frame" x="83" y="53" width="110" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="2LL-zS-tdm" secondAttribute="height" multiplier="1:1" id="oMP-Ex-F3q"/>
+                    </constraints>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="DD8-Hi-0Az">
+                    <rect key="frame" x="83" y="163" width="110" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="DD8-Hi-0Az" firstAttribute="width" secondItem="2LL-zS-tdm" secondAttribute="width" id="8T4-l9-ZCS"/>
+                <constraint firstItem="2LL-zS-tdm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DLe-sC-v6E"/>
+                <constraint firstItem="DD8-Hi-0Az" firstAttribute="centerX" secondItem="2LL-zS-tdm" secondAttribute="centerX" id="Jfh-zL-Sr5"/>
+                <constraint firstItem="2LL-zS-tdm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ofP-d2-0yZ"/>
+                <constraint firstItem="2LL-zS-tdm" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.4" id="rXc-yY-YsA"/>
+                <constraint firstItem="DD8-Hi-0Az" firstAttribute="top" secondItem="2LL-zS-tdm" secondAttribute="bottom" id="wek-hf-PIs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-23.188405797101453" y="-212.94642857142856"/>
+        </view>
+    </objects>
+</document>
